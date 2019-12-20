@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <script>
+    
+            var ships=[0,0,0,0,0];
+           ships[Math.floor(Math.random()*5)] = 1
+
+           var e = 0;
+           hi = true;
+           while(hi){
+
+           var answer = prompt("Enter a number from 1-5 to find the bomb. Type X to cancel");
+           
+           if(ships[answer] == 1){                
+
+               console.log(alert("You found the bomb! It took you "  + e +  " tries"));
+               
+               hi = false
+
+                window.location.href = "games.html"
+           }else if(answer == "X"){ 
+
+               alert("You canceled the game.");
+                hi= false
+                window.location.href = "games.html"
+               
+
+           }else{
+               alert("You didn't find the bomb. Try again.");
+               e++      
+
+                             
+
+               
+           }}
+
+
+           
+
+       </script>
+    </body>
+</html>
