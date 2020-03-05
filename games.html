@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html>
-    
     <head>
-        <meta charset = "utf-8">
-        <title> Bianglala R </title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Meddon|Nanum+Pen+Script|Raleway&display=swap');
-        </style>
-          <style>
-            @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
-            </style>
-        <style> a, a:hover{text-decoration:none;color:rgb(46, 15, 46)}</style>
+        <title>
+
+        </title>
     </head>
     <body>
+        <script>
+    
+            var ships=[0,0,0,0,0];
+           ships[Math.floor(Math.random()*5)] = 1
 
-            <div id="minimain">
-            <header>
-                <h1>My Portfolio</h1>
+           var e = 0;
+           hi = true;
+           while(hi){
 
-          
-                <br>
-                <div class="navigation"> <h4><a href="index.html"> About </a> | <a href="games.html"> Game </a> </h4> </div>
-                </div>
-        </header>
+           var answer = prompt("Enter a number from 1-5 to find the bomb. Type X to cancel");
+           
+           if(ships[answer] == 1){                
 
-        <br>
-        <a href="trialgame.html"> <img src=boat.png width= 200px> </a>
-        <h5>Click the picture above to play</h5>
+               console.log(alert("You found the bomb! It took you "  + e +  " tries"));
+               
+               hi = false
+
+                window.location.href = "games.html"
+           }else if(answer == "X"){ 
+
+               alert("You canceled the game.");
+                hi= false
+                window.location.href = "games.html"
+               
+           }else if(answer== "69")
+
+           alert("Nice");
+           hi=false
+           window.location.href= "games.html"
+
+           }else{
+               alert("You didn't find the bomb. Try again.");
+               e++      
+
+                             
+
+               
+           }}
+
 
            
-        </body>
-    </html>
+
+       </script>
+    </body>
+</html>
